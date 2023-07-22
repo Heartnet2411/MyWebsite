@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    scroll-behavior: calc(0.5s * 1000) smooth;
 }
 
 
@@ -176,9 +177,49 @@ svg {
     filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8));
 }
 
+#about-me{
+    margin-top: 10rem;
+}
+
+.about-me-title--wrap{
+    margin-bottom: 3rem;
+    background-image: linear-gradient(90deg ,#ffffffd9, #00000000);
+}
+
+.about-me-title{
+    font-size: 50px;
+    font-weight: 500;
+    text-align: left;
+    text-shadow:
+            4px 4px 0px #b6b6b6,
+            7px 7px 0px rgba(0, 0, 0, 0.2);
+    letter-spacing: 5px;
+    color: #080808;
+    margin-left: 20px;
+}
+
+.about-me{
+    position: relative;
+}
+
+.about-me-text--wrap{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-me-text{
+    font-size: 20px;
+    font-weight: 400;
+    color:  #ececec;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+    text-shadow: 0 1px 10px rgb(0, 0, 0, 0.8);
+}
 
 #contact{
-    margin-top: 12rem;
+    margin-top: 2rem;
 }
 
 .contact-title{
@@ -207,7 +248,7 @@ svg {
 
 .contact-info{
     height: max-content;
-    min-height: 150px;
+    min-height: 180px;
     width: 100%;
     border: 1px solid #080808;
     margin-top: 2rem;
@@ -216,6 +257,10 @@ svg {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.contact-info--link{
+    text-decoration: none;
 }
 
 .contact-info-icon{
@@ -231,6 +276,16 @@ svg {
     margin-left: 20px;
     margin-top: 20px;
     color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+}
+
+.contact-info-text{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #686868;
+    overflow-wrap: break-word;
 }
 
 .coppy-right{
